@@ -1,0 +1,36 @@
+### index 
+
+GET http://localhost:3000/movies.json
+
+### show
+
+GET http://localhost:3000/movies/4.json
+
+### create 
+
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "title create",
+  "year": "year create",
+  "plot": "plot create"
+}
+
+### update 
+
+PATCH http://localhost:3000/movies/7.json
+Content-Type: application/json
+
+{
+  "title": "title update",
+  "year": 200,
+  "plot": "plot update"
+}
+
+
+### destroy
+
+DELETE http://localhost:3000/movies/8.json
+
+

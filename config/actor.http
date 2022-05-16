@@ -1,0 +1,35 @@
+### index actors
+
+GET http://localhost:3000/actors.json
+
+### show actors
+
+GET http://localhost:3000/actors/1.json
+
+
+### create actors
+
+POST  http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "first_name create",
+  "last_name": "last_name create",
+  "known_for": "known_for create"
+}
+
+### update actors
+
+PATCH http://localhost:3000/actors/4.json
+Content-Type: application/json
+
+{
+  "first_name": "first_name update",
+  "last_name": "last_name update",
+  "known_for": "known_for update"
+}
+
+
+### destroy actors
+
+DELETE http://localhost:3000/actors/4.json
